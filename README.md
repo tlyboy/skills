@@ -10,8 +10,8 @@ npx skills add tlyboy/skills
 
 ## Skills
 
-| Skill   | Description                                                 |
-| ------- | ----------------------------------------------------------- |
+| Skill          | Description                                                 |
+| -------------- | ----------------------------------------------------------- |
 | tlyboy-profile | Personal preferences, toolchain, and coding conventions     |
 | tlyboy-starter | Initialize and scaffold new projects from starter templates |
 

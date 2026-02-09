@@ -17,64 +17,64 @@ npx degit tlyboy/<template> <project-name>
 
 ### Frontend
 
-| Template | Command |
-|----------|---------|
-| Vue | `npx degit tlyboy/vue-starter <project-name>` |
-| React | `npx degit tlyboy/react-starter <project-name>` |
-| Nuxt | `npx degit tlyboy/nuxt-starter <project-name>` |
-| Next.js | `npx degit tlyboy/next-starter <project-name>` |
+| Template | Command                                         |
+| -------- | ----------------------------------------------- |
+| Vue      | `npx degit tlyboy/vue-starter <project-name>`   |
+| React    | `npx degit tlyboy/react-starter <project-name>` |
+| Nuxt     | `npx degit tlyboy/nuxt-starter <project-name>`  |
+| Next.js  | `npx degit tlyboy/next-starter <project-name>`  |
 
 ### UI Library
 
-| Template | Command |
-|----------|---------|
-| shadcn + Vue | `npx degit tlyboy/shadcn-vue-starter <project-name>` |
-| shadcn + React | `npx degit tlyboy/shadcn-react-starter <project-name>` |
-| shadcn + Nuxt | `npx degit tlyboy/shadcn-nuxt-starter <project-name>` |
-| shadcn + Next.js | `npx degit tlyboy/shadcn-next-starter <project-name>` |
-| Element Plus + Vue | `npx degit tlyboy/element-plus-vue-starter <project-name>` |
+| Template            | Command                                                     |
+| ------------------- | ----------------------------------------------------------- |
+| shadcn + Vue        | `npx degit tlyboy/shadcn-vue-starter <project-name>`        |
+| shadcn + React      | `npx degit tlyboy/shadcn-react-starter <project-name>`      |
+| shadcn + Nuxt       | `npx degit tlyboy/shadcn-nuxt-starter <project-name>`       |
+| shadcn + Next.js    | `npx degit tlyboy/shadcn-next-starter <project-name>`       |
+| Element Plus + Vue  | `npx degit tlyboy/element-plus-vue-starter <project-name>`  |
 | Element Plus + Nuxt | `npx degit tlyboy/element-plus-nuxt-starter <project-name>` |
-| Vant + Vue | `npx degit tlyboy/vant-vue-starter <project-name>` |
+| Vant + Vue          | `npx degit tlyboy/vant-vue-starter <project-name>`          |
 
 ### Desktop (Tauri)
 
-| Template | Command |
-|----------|---------|
-| Tauri + Vue | `npx degit tlyboy/tauri-vue-starter <project-name>` |
-| Tauri + React | `npx degit tlyboy/tauri-react-starter <project-name>` |
+| Template               | Command                                                      |
+| ---------------------- | ------------------------------------------------------------ |
+| Tauri + Vue            | `npx degit tlyboy/tauri-vue-starter <project-name>`          |
+| Tauri + React          | `npx degit tlyboy/tauri-react-starter <project-name>`        |
 | Tauri + shadcn + React | `npx degit tlyboy/tauri-shadcn-react-starter <project-name>` |
 
 ### Backend & Server
 
-| Template | Command |
-|----------|---------|
-| Nitro | `npx degit tlyboy/nitro-starter <project-name>` |
-| Bun | `npx degit tlyboy/bun-starter <project-name>` |
+| Template | Command                                         |
+| -------- | ----------------------------------------------- |
+| Nitro    | `npx degit tlyboy/nitro-starter <project-name>` |
+| Bun      | `npx degit tlyboy/bun-starter <project-name>`   |
 
 ### MCP (Model Context Protocol)
 
-| Template | Command |
-|----------|---------|
+| Template   | Command                                              |
+| ---------- | ---------------------------------------------------- |
 | MCP Server | `npx degit tlyboy/mcp-server-starter <project-name>` |
 | MCP Client | `npx degit tlyboy/mcp-client-starter <project-name>` |
 
 ### Other
 
-| Template | Command |
-|----------|---------|
-| VitePress | `npx degit tlyboy/vitepress-starter <project-name>` |
-| Slidev | `npx degit tlyboy/slidev-starter <project-name>` |
-| uni-app | `npx degit tlyboy/uni-starter <project-name>` |
-| Docker Compose (Caddy) | `npx degit tlyboy/compose-starter/caddy <project-name>` |
-| Docker Compose (Caddy + Cloudflare) | `npx degit tlyboy/compose-starter/caddy-cf <project-name>` |
-| Docker Compose (Caddy + Aliyun) | `npx degit tlyboy/compose-starter/caddy-ali <project-name>` |
-| Docker Compose (MySQL) | `npx degit tlyboy/compose-starter/mysql <project-name>` |
-| Docker Compose (Redis) | `npx degit tlyboy/compose-starter/redis <project-name>` |
-| Docker Compose (Nginx) | `npx degit tlyboy/compose-starter/nginx <project-name>` |
-| Docker Compose (n8n) | `npx degit tlyboy/compose-starter/n8n <project-name>` |
-| Docker Compose (Open WebUI) | `npx degit tlyboy/compose-starter/open-webui <project-name>` |
-| Docker Compose (Open WebUI + CUDA) | `npx degit tlyboy/compose-starter/open-webui-cuda <project-name>` |
-| Docker Compose (Verdaccio) | `npx degit tlyboy/compose-starter/verdaccio <project-name>` |
+| Template                            | Command                                                           |
+| ----------------------------------- | ----------------------------------------------------------------- |
+| VitePress                           | `npx degit tlyboy/vitepress-starter <project-name>`               |
+| Slidev                              | `npx degit tlyboy/slidev-starter <project-name>`                  |
+| uni-app                             | `npx degit tlyboy/uni-starter <project-name>`                     |
+| Docker Compose (Caddy)              | `npx degit tlyboy/compose-starter/caddy <project-name>`           |
+| Docker Compose (Caddy + Cloudflare) | `npx degit tlyboy/compose-starter/caddy-cf <project-name>`        |
+| Docker Compose (Caddy + Aliyun)     | `npx degit tlyboy/compose-starter/caddy-ali <project-name>`       |
+| Docker Compose (MySQL)              | `npx degit tlyboy/compose-starter/mysql <project-name>`           |
+| Docker Compose (Redis)              | `npx degit tlyboy/compose-starter/redis <project-name>`           |
+| Docker Compose (Nginx)              | `npx degit tlyboy/compose-starter/nginx <project-name>`           |
+| Docker Compose (n8n)                | `npx degit tlyboy/compose-starter/n8n <project-name>`             |
+| Docker Compose (Open WebUI)         | `npx degit tlyboy/compose-starter/open-webui <project-name>`      |
+| Docker Compose (Open WebUI + CUDA)  | `npx degit tlyboy/compose-starter/open-webui-cuda <project-name>` |
+| Docker Compose (Verdaccio)          | `npx degit tlyboy/compose-starter/verdaccio <project-name>`       |
 
 ## Instructions
 
