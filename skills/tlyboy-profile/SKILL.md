@@ -1,5 +1,5 @@
 ---
-name: profile
+name: tlyboy-profile
 description: "Guany's personal preferences, toolchain, and coding conventions. Use when you need to understand Guany's preferred tech stack, tools, code style, or environment setup. Topics: preferences, toolchain, code style, editor, shell, font, theme, conventions."
 ---
 

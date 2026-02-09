@@ -12,8 +12,8 @@ npx skills add tlyboy/skills
 
 | Skill   | Description                                                 |
 | ------- | ----------------------------------------------------------- |
-| profile | Personal preferences, toolchain, and coding conventions     |
-| starter | Initialize and scaffold new projects from starter templates |
+| tlyboy-profile | Personal preferences, toolchain, and coding conventions     |
+| tlyboy-starter | Initialize and scaffold new projects from starter templates |
 
 ## License
 
