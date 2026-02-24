@@ -1,6 +1,6 @@
 ---
 name: tlyboy-starter
-description: "Helps initialize and scaffold new projects based on Guany's personal preferences and starter templates. Use when the user asks to initialize, scaffold, or set up a new project, create a project from template, or start a new app. Actions: init, scaffold, setup, create, generate, start, new. Topics: starter, boilerplate, template, project setup, degit."
+description: "Helps initialize and scaffold new projects based on Guany's personal preferences and starter templates. Use when the user asks to initialize, scaffold, or set up a new project, create a project from template, or start a new app. Actions: init, scaffold, setup, create, generate, start, new. Topics: starter, boilerplate, template, project setup, degit, vue, react, nuxt, next, tauri, nitro, bun, shadcn, mcp, vitepress, slidev, docker compose."
 ---
 
 # Starter
@@ -60,21 +60,21 @@ npx degit tlyboy/<template> <project-name>
 
 ### Other
 
-| Template                            | Command                                                           |
-| ----------------------------------- | ----------------------------------------------------------------- |
-| VitePress                           | `npx degit tlyboy/vitepress-starter <project-name>`               |
-| Slidev                              | `npx degit tlyboy/slidev-starter <project-name>`                  |
-| uni-app                             | `npx degit tlyboy/uni-starter <project-name>`                     |
-| Docker Compose (Caddy)              | `npx degit tlyboy/compose-starter/caddy <project-name>`           |
-| Docker Compose (Caddy + Cloudflare) | `npx degit tlyboy/compose-starter/caddy-cf <project-name>`        |
-| Docker Compose (Caddy + Aliyun)     | `npx degit tlyboy/compose-starter/caddy-ali <project-name>`       |
-| Docker Compose (MySQL)              | `npx degit tlyboy/compose-starter/mysql <project-name>`           |
-| Docker Compose (Redis)              | `npx degit tlyboy/compose-starter/redis <project-name>`           |
-| Docker Compose (Nginx)              | `npx degit tlyboy/compose-starter/nginx <project-name>`           |
-| Docker Compose (n8n)                | `npx degit tlyboy/compose-starter/n8n <project-name>`             |
-| Docker Compose (Open WebUI)         | `npx degit tlyboy/compose-starter/open-webui <project-name>`      |
-| Docker Compose (Open WebUI + CUDA)  | `npx degit tlyboy/compose-starter/open-webui-cuda <project-name>` |
-| Docker Compose (Verdaccio)          | `npx degit tlyboy/compose-starter/verdaccio <project-name>`       |
+| Template                            | Command                                                       |
+| ----------------------------------- | ------------------------------------------------------------- |
+| VitePress                           | `npx degit tlyboy/vitepress-starter <project-name>`           |
+| Slidev                              | `npx degit tlyboy/slidev-starter <project-name>`              |
+| uni-app                             | `npx degit tlyboy/uni-starter <project-name>`                 |
+| Docker Compose (Caddy)              | `npx degit tlyboy/compose-starter/caddy caddy`                |
+| Docker Compose (Caddy + Cloudflare) | `npx degit tlyboy/compose-starter/caddy-cf caddy`             |
+| Docker Compose (Caddy + Aliyun)     | `npx degit tlyboy/compose-starter/caddy-ali caddy`            |
+| Docker Compose (MySQL)              | `npx degit tlyboy/compose-starter/mysql mysql`                |
+| Docker Compose (Redis)              | `npx degit tlyboy/compose-starter/redis redis`                |
+| Docker Compose (Nginx)              | `npx degit tlyboy/compose-starter/nginx nginx`                |
+| Docker Compose (n8n)                | `npx degit tlyboy/compose-starter/n8n n8n`                    |
+| Docker Compose (Open WebUI)         | `npx degit tlyboy/compose-starter/open-webui open-webui`      |
+| Docker Compose (Open WebUI + CUDA)  | `npx degit tlyboy/compose-starter/open-webui-cuda open-webui` |
+| Docker Compose (Verdaccio)          | `npx degit tlyboy/compose-starter/verdaccio verdaccio`        |
 
 ## Instructions
 
@@ -82,6 +82,21 @@ npx degit tlyboy/<template> <project-name>
 2. Suggest the matching `npx degit tlyboy/<template> <project-name>` command.
 3. After degit, run `ni` to install dependencies.
 4. If the user needs a custom setup that doesn't match any template, use the config references in `templates/` (`.editorconfig`, `.prettierrc`) as a baseline.
+
+## Template Variables
+
+After copying template files, replace the following placeholders:
+
+| Variable           | Format         | Example           |
+| ------------------ | -------------- | ----------------- |
+| `{{project-name}}` | kebab-case     | `my-awesome-app`  |
+| `{{project_name}}` | snake_case     | `my_awesome_app`  |
+| `{{project name}}` | natural        | `My Awesome App`  |
+| `{{description}}`  | short sentence | `A Vue 3 starter` |
+| `{{emoji}}`        | single emoji   | `🚀`              |
+| `{{year}}`         | current year   | `2026`            |
+
+Pick an emoji that fits the project type, e.g. `⚡` for backend, `🎨` for UI, `🖥️` for desktop, `📦` for library, `🤖` for MCP.
 
 ## Config References
 

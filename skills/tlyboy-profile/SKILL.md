@@ -1,6 +1,6 @@
 ---
 name: tlyboy-profile
-description: "Guany's personal preferences, toolchain, and coding conventions. Use when you need to understand Guany's preferred tech stack, tools, code style, or environment setup. Topics: preferences, toolchain, code style, editor, shell, font, theme, conventions."
+description: "Guany's personal preferences, toolchain, and coding conventions. Use when you need to understand Guany's preferred tech stack, tools, code style, or environment setup. Use when deciding which package manager, runtime, or command runner to use. Topics: preferences, toolchain, code style, editor, shell, font, theme, conventions, pnpm, ni, uv, uvx, npx, fnm, global install."
 ---
 
 # Profile
@@ -24,6 +24,8 @@ Guany's personal preferences and toolchain.
 | -------------------- | ----------------------------------------- |
 | Package Manager      | pnpm                                      |
 | Install Command      | ni (@antfu/ni)                            |
+| Python Tool          | uv, uvx (no global pip)                   |
+| Run Command          | npx, uvx (avoid global install)           |
 | Node Version Manager | fnm                                       |
 | Editor               | VS Code + Vitesse Dark theme              |
 | Shell                | Oh My Zsh + Starship                      |

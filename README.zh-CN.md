@@ -8,12 +8,13 @@
 npx skills add tlyboy/skills
 ```
 
-## Skills
+## 使用说明
 
-| Skill          | Description                       |
+| 技能           | 描述                              |
 | -------------- | --------------------------------- |
-| tlyboy-profile | 个人偏好、工具链和编码规范        |
-| tlyboy-starter | 从 starter 模板初始化和搭建新项目 |
+| tlyboy-profile | 个人偏好、工具链与编码规范        |
+| tlyboy-starter | 从 Starter 模板初始化和搭建新项目 |
+| convention     | 项目规范与文档标准                |
 
 ## 使用许可
 

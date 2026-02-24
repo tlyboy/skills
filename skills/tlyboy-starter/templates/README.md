@@ -2,6 +2,8 @@
 
 {{emoji}} {{description}}
 
+<!-- Tech stack table here if applicable -->
+
 ## Install
 
 ```bash
