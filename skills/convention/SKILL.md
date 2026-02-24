@@ -12,7 +12,7 @@ Project conventions and documentation standards.
 Project README must provide both English (`README.md`) and Chinese (`README.zh-CN.md`) versions, following a fixed structure:
 
 - One `#` (H1): project name
-- `{{emoji}} {{description}}` directly under H1, **kept identical in both languages** (used as GitHub repo description)
+- `{{emoji}} {{description}}` directly under H1
 - Tech stack table (if applicable) directly under `{{emoji}} {{description}}`
 - Three `##` (H2) sections as the main structure: Install, Usage, License (Chinese: 安装, 使用说明, 使用许可)
 - Additional content under `###` (H3) titles within corresponding H2 sections as needed
