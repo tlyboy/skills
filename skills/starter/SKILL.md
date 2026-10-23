@@ -54,11 +54,23 @@ These steps assume git, Node.js, `npx`, `ni`, and pnpm. When one is missing, do 
 1. **Recommended**: the same setup the starters are built with. Install mise, then the tools through it:
 
    ```bash
-   curl https://mise.run | sh   # Windows: winget install jdx.mise
-   # activate mise in the shell as the installer prints, then:
+   # macOS / Linux
+   curl https://mise.run | sh
+   ```
+
+   ```powershell
+   # Windows: Scoop keeps the user PATH clean, unlike winget
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   irm get.scoop.sh | iex
+   scoop install mise
+   ```
+
+   Activate mise in the shell as the installer prints, then:
+
+   ```bash
    mise use -g node@lts pnpm
    npm i -g @antfu/ni
    ```
 
 2. **Simplest**: use what is already there. Pull with git instead of giget, run `pnpm` instead of `ni`, and when Node.js exists but pnpm does not, use `npx pnpm install` or `npm i -g pnpm`.
-3. **Their own way**: nvm, fnm, Volta, Homebrew, a system package manager, or anything else they prefer.
+3. **Their own way**: nvm, fnm, Volta, Homebrew, winget, a system package manager, or anything else they prefer.
