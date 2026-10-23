@@ -68,8 +68,7 @@ These steps assume git, Node.js, `npx`, `ni`, and pnpm. When one is missing, do 
    Activate mise in the shell as the installer prints, then:
 
    ```bash
-   mise use -g node@lts pnpm
-   npm i -g @antfu/ni
+   mise use -g node@lts pnpm ni
    ```
 
 2. **Simplest**: use what is already there. Pull with git instead of giget, run `pnpm` instead of `ni`, and when Node.js exists but pnpm does not, use `npx pnpm install` or `npm i -g pnpm`.
