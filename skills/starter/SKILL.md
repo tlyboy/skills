@@ -30,6 +30,16 @@ npx giget gh:tlyboy/<starter> <name>
 cd <name>
 ```
 
+Without Node.js or `npx`, use git and drop the starter's history:
+
+```bash
+git clone --depth 1 https://github.com/tlyboy/<starter>.git <name>
+cd <name>
+rm -rf .git
+```
+
+The project itself still needs Node.js; install it with mise (`mise use -g node@lts`) before installing dependencies.
+
 Then:
 
 1. Rename the project: `name` in `package.json`, and the H1 and description in `README.md` / `README.zh.md`. Tauri and Electron starters also carry an app name and identifier in their own config.

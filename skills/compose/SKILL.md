@@ -33,6 +33,17 @@ cd <dir>
 docker compose up -d
 ```
 
+Servers often have no Node.js. Pull a single template with git sparse checkout instead:
+
+```bash
+git clone --depth 1 --filter=blob:none --sparse https://github.com/tlyboy/compose-starter.git /tmp/compose-starter
+git -C /tmp/compose-starter sparse-checkout set <template>
+cp -r /tmp/compose-starter/<template> <dir>
+rm -rf /tmp/compose-starter
+cd <dir>
+docker compose up -d
+```
+
 - Templates ship with placeholder credentials (for example `POSTGRES_PASSWORD`). Change them before exposing a service.
 - Put secrets such as DNS API tokens in a `.env` file next to `compose.yaml`; do not commit it.
 - Data lives in bind mounts under the template directory or in named Docker volumes. Keep both when upgrading: `docker compose pull && docker compose up -d`.
