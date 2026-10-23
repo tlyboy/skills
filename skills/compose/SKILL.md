@@ -1,0 +1,38 @@
+---
+name: compose
+description: 'Use when deploying or starting a common service with Docker Compose on a server or VPS, such as Caddy, Nginx, MySQL, PostgreSQL, Redis, n8n, New API, Open WebUI, or Verdaccio. Lists the tlyboy compose-starter templates and how to pull one with giget.'
+---
+
+# Compose
+
+`tlyboy/compose-starter` holds one Docker Compose template per service. Pull only the directory you need.
+
+## Templates
+
+| Service             | Template     | Notes                                                                                             |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
+| Caddy               | `caddy`      | Config in `conf/Caddyfile`, static files in `site/`                                               |
+| Caddy + Alibaba DNS | `caddy-ali`  | Custom build with `caddy-dns/alidns`; needs `ALIYUN_ACCESS_KEY_ID` and `ALIYUN_ACCESS_KEY_SECRET` |
+| Caddy + Cloudflare  | `caddy-cf`   | Custom build with `caddy-dns/cloudflare`; needs `CF_API_TOKEN`                                    |
+| Nginx               | `nginx`      |                                                                                                   |
+| MySQL               | `mysql`      |                                                                                                   |
+| PostgreSQL          | `postgres`   |                                                                                                   |
+| Redis               | `redis`      |                                                                                                   |
+| n8n                 | `n8n`        |                                                                                                   |
+| New API             | `new-api`    |                                                                                                   |
+| Open WebUI          | `open-webui` | Use `open-webui-cuda` on NVIDIA GPU hosts                                                         |
+| Verdaccio           | `verdaccio`  |                                                                                                   |
+
+Check `https://github.com/tlyboy/compose-starter` for templates added after this list.
+
+## Usage
+
+```bash
+npx giget gh:tlyboy/compose-starter/<template> <dir>
+cd <dir>
+docker compose up -d
+```
+
+- Templates ship with placeholder credentials (for example `POSTGRES_PASSWORD`). Change them before exposing a service.
+- Put secrets such as DNS API tokens in a `.env` file next to `compose.yaml`; do not commit it.
+- Data lives in bind mounts under the template directory or in named Docker volumes. Keep both when upgrading: `docker compose pull && docker compose up -d`.
