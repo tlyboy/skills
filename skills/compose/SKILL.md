@@ -52,6 +52,6 @@ docker compose up -d
 
 Templates need Docker with the Compose plugin, plus `npx` or git to pull them. When one is missing, do not install anything silently. Tell the user what is missing and let them pick:
 
-1. **Recommended**: Docker's official install script on Linux servers (`curl -fsSL https://get.docker.com | sh`), and git from the system package manager.
-2. **Simplest**: install only what is missing from the system package manager (for example on Ubuntu: `apt install docker.io docker-compose-v2 git`), and pull templates with git as shown above.
-3. **Their own way**: Docker Desktop, OrbStack, Podman, or anything else they prefer.
+1. **Recommended**: Docker Engine from Docker's apt repository, with an optional Alibaba Cloud mirror and a pull proxy. Follow [docker.md](docker.md) (Ubuntu); git from the system package manager.
+2. **Simplest**: Docker's convenience script, `curl -fsSL https://get.docker.com | sh` (add `-s -- --mirror Aliyun` for servers in mainland China). It installs the latest release without prompts and is not meant for upgrades or production.
+3. **Their own way**: the distribution's `docker.io` package, Docker Desktop, OrbStack, Podman, or anything else they prefer.
