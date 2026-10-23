@@ -38,11 +38,27 @@ cd <name>
 rm -rf .git
 ```
 
-The project itself still needs Node.js; install it with mise (`mise use -g node@lts`) before installing dependencies.
+The project itself still needs Node.js; see [Missing Tools](#missing-tools).
 
 Then:
 
 1. Rename the project: `name` in `package.json`, and the H1 and description in `README.md` / `README.zh.md`. Also rename the app name and identifier in `src-tauri/tauri.conf.json` (`productName`, `identifier`) for Tauri, `electron-builder.json5` (`productName`, `appId`) for Electron, and `src/manifest.json` (`name`, `appid`) for uni-app.
-2. Install dependencies with `ni`. Without `ni`, use the package manager the lockfile points to: the starters use pnpm, so `pnpm install` (install pnpm with `mise use -g pnpm` if missing).
+2. Install dependencies with `ni`. Without `ni`, run `pnpm install` directly; the starters pin pnpm in `packageManager`. If pnpm is missing too, see [Missing Tools](#missing-tools).
 3. Read the starter's `README.md` and `AGENTS.md` (when present) for scripts and layout.
 4. `git init` and make the first commit `feat: initial`.
+
+## Missing Tools
+
+These steps assume git, Node.js, `npx`, `ni`, and pnpm. When one is missing, do not install anything silently. Tell the user what is missing and let them pick:
+
+1. **Recommended**: the same setup the starters are built with. Install mise, then the tools through it:
+
+   ```bash
+   curl https://mise.run | sh   # Windows: winget install jdx.mise
+   # activate mise in the shell as the installer prints, then:
+   mise use -g node@lts pnpm
+   npm i -g @antfu/ni
+   ```
+
+2. **Simplest**: use what is already there. Pull with git instead of giget, run `pnpm` instead of `ni`, and when Node.js exists but pnpm does not, use `npx pnpm install` or `npm i -g pnpm`.
+3. **Their own way**: nvm, fnm, Volta, Homebrew, a system package manager, or anything else they prefer.

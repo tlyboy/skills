@@ -47,3 +47,11 @@ docker compose up -d
 - Templates ship with placeholder credentials (for example `POSTGRES_PASSWORD`). Change them before exposing a service.
 - Put secrets such as DNS API tokens in a `.env` file next to `compose.yaml`; do not commit it.
 - Data lives in bind mounts under the template directory or in named Docker volumes. Keep both when upgrading: `docker compose pull && docker compose up -d`, or `docker compose build --pull && docker compose up -d` for the custom-built `caddy-ali` and `caddy-cf`.
+
+## Missing Tools
+
+Templates need Docker with the Compose plugin, plus `npx` or git to pull them. When one is missing, do not install anything silently. Tell the user what is missing and let them pick:
+
+1. **Recommended**: Docker's official install script on Linux servers (`curl -fsSL https://get.docker.com | sh`), and git from the system package manager.
+2. **Simplest**: install only what is missing from the system package manager (for example on Ubuntu: `apt install docker.io docker-compose-v2 git`), and pull templates with git as shown above.
+3. **Their own way**: Docker Desktop, OrbStack, Podman, or anything else they prefer.
