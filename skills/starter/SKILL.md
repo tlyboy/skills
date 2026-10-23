@@ -43,6 +43,6 @@ The project itself still needs Node.js; install it with mise (`mise use -g node@
 Then:
 
 1. Rename the project: `name` in `package.json`, and the H1 and description in `README.md` / `README.zh.md`. Tauri and Electron starters also carry an app name and identifier in their own config.
-2. Install dependencies with `ni`.
+2. Install dependencies with `ni`. Without `ni`, use the package manager the lockfile points to: the starters use pnpm, so `pnpm install` (install pnpm with `mise use -g pnpm` if missing).
 3. Read the starter's `README.md` and `AGENTS.md` (when present) for scripts and layout.
 4. `git init` and make the first commit `feat: initial`.
