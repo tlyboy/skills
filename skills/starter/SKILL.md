@@ -5,7 +5,7 @@ description: 'Use when creating a new project or scaffolding an app, desktop app
 
 # Starter
 
-New projects usually start from a tlyboy starter instead of a `create-*` scaffold. The starters already carry the preferred stack, formatting, lint setup, and project-level agent skills.
+New projects usually start from a tlyboy starter instead of a `create-*` scaffold. The starters already carry the preferred stack and oxfmt / oxlint setup; the React starters also ship project-level agent skills in `.agents/skills`.
 
 ## Pick a Starter
 
@@ -42,7 +42,7 @@ The project itself still needs Node.js; install it with mise (`mise use -g node@
 
 Then:
 
-1. Rename the project: `name` in `package.json`, and the H1 and description in `README.md` / `README.zh.md`. Tauri and Electron starters also carry an app name and identifier in their own config.
+1. Rename the project: `name` in `package.json`, and the H1 and description in `README.md` / `README.zh.md`. Also rename the app name and identifier in `src-tauri/tauri.conf.json` (`productName`, `identifier`) for Tauri, `electron-builder.json5` (`productName`, `appId`) for Electron, and `src/manifest.json` (`name`, `appid`) for uni-app.
 2. Install dependencies with `ni`. Without `ni`, use the package manager the lockfile points to: the starters use pnpm, so `pnpm install` (install pnpm with `mise use -g pnpm` if missing).
 3. Read the starter's `README.md` and `AGENTS.md` (when present) for scripts and layout.
 4. `git init` and make the first commit `feat: initial`.

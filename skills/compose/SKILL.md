@@ -46,4 +46,4 @@ docker compose up -d
 
 - Templates ship with placeholder credentials (for example `POSTGRES_PASSWORD`). Change them before exposing a service.
 - Put secrets such as DNS API tokens in a `.env` file next to `compose.yaml`; do not commit it.
-- Data lives in bind mounts under the template directory or in named Docker volumes. Keep both when upgrading: `docker compose pull && docker compose up -d`.
+- Data lives in bind mounts under the template directory or in named Docker volumes. Keep both when upgrading: `docker compose pull && docker compose up -d`, or `docker compose build --pull && docker compose up -d` for the custom-built `caddy-ali` and `caddy-cf`.
